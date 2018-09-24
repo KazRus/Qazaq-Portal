@@ -1,0 +1,273 @@
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/RalewayMedium.ttf);
+}
+
+@font-face {
+    font-family: OnePlusOne2015-Regular;
+    src: url(../fonts/OnePlusOne2015-Regular.otf);
+}
+
+@font-face {
+    font-family: RobotoRegular;
+    src: url(../fonts/RobotoRegular.ttf);
+}
+
+@font-face {
+    font-family: RobotoLight;
+    src: url(../fonts/RobotoLight.ttf);
+}
+
+@font-face {
+    font-family: GoogleSans;
+    src: url(../fonts/GoogleSans.ttf);
+}
+
+body {
+    font-family: OnePlusOne2015-Regular !important;
+}
+
+.hermes.tp-bullets {
+}
+
+.hermes .tp-bullet {
+    overflow: hidden;
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    box-shadow: inset 0 0 0 2px rgb(255, 255, 255);
+    -webkit-transition: background 0.3s ease;
+    transition: background 0.3s ease;
+    position: absolute
+}
+
+.hermes .tp-bullet:hover {
+    background-color: rgba(0, 0, 0, 0)
+}
+
+.hermes .tp-bullet:after {
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    height: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 1px rgb(255, 255, 255);
+    -webkit-transition: height 0.3s ease;
+    transition: height 0.3s ease
+}
+
+.hermes .tp-bullet.selected:after {
+    height: 100%
+}
+
+.search input[type=text] {
+    border-color: #1DB8C1;
+}
+
+.second-tab input[type=text] {
+    border-color: #F44336;
+}
+
+.search-button a {
+    color: #1DB8C1;
+}
+
+.second-tab .background-main-color {
+    background-color: #F44336 !important;
+}
+
+.restourant {
+    font-family: GoogleSans;
+}
+
+.lang-change {
+    margin-left: 40px;
+}
+
+.news-list {
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+section .section-title-left span.section-title-des:after {
+    margin: auto;
+}
+
+.news-title {
+    margin-bottom: 0px !important;
+    margin-top: 20px !important;
+    padding-bottom: 20px !important;
+}
+
+.btn-header a {
+    padding: 10px;
+    background-color: #1DB8C1;
+    margin-left: -4px;
+
+}
+
+.btn-header a:hover {
+    background-color: #F44336;
+}
+
+.btn-header a.active {
+    background-color: #F44336;
+    color: white;
+}
+
+.font-abel, .font-Raleway a {
+    font-family: Raleway !important;
+    font-size: 16px;
+}
+
+.popular-blogers .rating {
+    position: absolute;
+    margin: auto;
+    margin-top: -40px;
+    left: 30%;
+}
+
+.hotel-grid .text-medium a {
+    font-family: RobotoRegular !important;
+}
+
+#agency-services h3 .text-medium {
+    font-family: RobotoRegular;
+    font-size: 14px !important;
+}
+
+.header-output .nav-menu li a {
+    font-family: RobotoRegular !important;
+}
+
+section .section-title span.section-title-des {
+    font-size: 14px;
+}
+
+.news-list i {
+    font-size: 14px;
+    margin-right: 5px;
+}
+
+.news-list .news-date {
+    font-size: 14px;
+}
+
+.news-list h3 {
+    font-family: GoogleSans;
+}
+
+.travelers-say h5 {
+    font-family: RobotoRegular;
+    font-size: 14px;
+}
+
+.travelers-say i {
+    font-size: 12px;
+}
+
+.news-header h6 {
+    font-family: RobotoLight;
+}
+
+.news-header li {
+    font-family: RobotoLight;
+}
+
+.blog-entry .news-title {
+    line-height: 16px;
+    margin-top: 0px !important;
+    padding-bottom: 10px !important;
+}
+
+.meta .fa {
+    font-size: 16px;
+    margin-right: 5px;
+    color: #1DB8C1;
+
+}
+
+ .meta span a, .blog-entry .meta span {
+    color: #212121;
+    font-size: 13px;
+    font-family: RobotoLight;
+}
+
+.news-detail h1 {
+    font-family: "Open Sans";
+}
+
+.other-news .fa a{
+    font-family: "Open Sans";
+    font-size: 14px !important;
+}
+.other-news span a{
+    font-family: "Open Sans";
+}
+.other-news .fa {
+    font-size: 13px !important;
+    margin-right: 5px;
+    color: #1DB8C1;
+}
+.other-news p {
+    font-size: 14px;
+}
+.category-title {
+    font-family: GoogleSans;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+    #logo img {
+        max-width: 130px;
+    }
+
+    #agency-services h3 .text-medium {
+        font-size: 12px !important;
+    }
+
+    .search-filter .nav-tabs .nav-link {
+        font-size: 10px;
+    }
+
+    section .section-title span.section-title-des {
+        font-size: 12px;
+    }
+
+    .travelers-say .sayer-img {
+        float: none !important;
+        margin-right: 0px !important;
+    }
+
+    .travelers-say .sayer-img img {
+        width: 100%;
+    }
+
+    .forcefullwidth_wrapper_tp_banner .slider-label {
+        display: none !important;
+    }
+    .news-comment .commentlist img {
+        width: 100%;
+    }
+.news-comment .commentlist {
+    line-height: 18px;
+}
+.news-comment .commentlist  {
+    margin-left: 0px;
+}
+
+
+
+}

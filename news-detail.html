@@ -1,0 +1,605 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <title>Qazaq Portal</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,800|Poppins:300i,400,300,700,400i,500|Ubuntu:300i,400,300,700,400i,500|Raleway:400,500,600,700"
+          rel="stylesheet">
+    <!-- CSS Files -->
+
+    <link rel="stylesheet" type="text/css" href="plugins/revslider/css/settings.css">
+    <!-- Owl Carousel Assets -->
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/travlez-jquery-ui.css">
+    <link rel="stylesheet" href="css/flag-icon.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/main.css">
+
+
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/loading.js"></script>
+
+
+    <!-- REVOLUTION JS FILES -->
+    <script type="text/javascript" src="plugins/revslider/js/jquery.themepunch.tools.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/jquery.themepunch.revolution.min.js"></script>
+
+    <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  (Load Extensions only on Local File Systems !  The following part can be removed on Server for On Demand Loading) -->
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script type="text/javascript"
+            src="plugins/revslider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script type="text/javascript"
+            src="plugins/revslider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script type="text/javascript"
+            src="plugins/revslider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script type="text/javascript" src="plugins/revslider/js/extensions/revolution.extension.video.min.js"></script>
+
+</head>
+
+<body>
+
+<section id="load-screen">
+    <div class="looding-in background-light-grey padding-tb-200px z-index-99">
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="col-lg-6 text-center">
+                    <div class="loading-page">
+                        <div class="counter">
+                            <div class="text-center"><a href="#"><img src="images/logo.png" alt=""></a></div>
+                            <div class="margin-tb-30px padding-8px background-white">
+                                <div class="animation padding-2px background-main-color"></div>
+                            </div>
+                            <div>loading <span class="num">0%</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<header class="background-white box-shadow">
+    <div class="background-second-color padding-tb-5px">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm d-none d-sm-block text-white btn-header">
+                    <a class="active" href="#">кнопка</a>
+                    <a href="#">кнопка</a>
+                    <a href="#">кнопка</a>
+                </div>
+                <div class="col-sm">
+                    <ul class="list-inline text-center margin-0px text-white">
+                        <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook"
+                                                                                     aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-vk"
+                                                                                     aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-google-plus"
+                                                                                   aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter"
+                                                                                    aria-hidden="true"></i></a></li>
+                        <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-instagram"
+                                                                                aria-hidden="true"></i></a></li>
+                    </ul>
+                    <!-- // Social -->
+                </div>
+                <div class="col-sm d-none d-sm-block">
+                    <div class="dropdown show float-right lang-change">
+                        <a class="dropdown-toggle text-white text-uppercase" href="#" role="button"
+                           id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="flag-icon flag-icon-us margin-right-8px"></span> English
+                        </a>
+
+                        <div class="dropdown-menu text-small text-uppercase" aria-labelledby="dropdownMenuLink">
+                            <a class="dropdown-item" href="#"><span
+                                    class="flag-icon flag-icon-es margin-right-8px"></span> Spanish</a>
+                            <a class="dropdown-item" href="#"><span
+                                    class="flag-icon flag-icon-mr margin-right-8px"></span> Arabic</a>
+                            <a class="dropdown-item" href="#"><span
+                                    class="flag-icon flag-icon-fr margin-right-8px"></span> French</a>
+                            <a class="dropdown-item" href="#"><span
+                                    class="flag-icon flag-icon-de margin-right-8px"></span> German</a>
+                        </div>
+                    </div>
+                    <ul class="user-area list-inline float-right margin-0px text-white">
+                        <li class="list-inline-item  padding-right-10px"><a href="page-login-2.html"><i
+                                class="fa fa-lock padding-right-5px"></i>Воити</a></li>
+                        <li class="list-inline-item"><a href="page-login-1.html"><i
+                                class="fa fa-user-plus padding-right-5px"></i>Регистрация</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header-output">
+        <div class="container header-in">
+            <div class="row">
+                <div class="col-lg-3">
+                    <a id="logo" href="01-home.html" class="d-inline-block margin-tb-10px"><img src="images/logo.png"
+                                                                                                alt=""></a>
+                    <a class="mobile-toggle" href="#"><i class="fa fa-navicon"></i></a>
+                </div>
+                <div class="col-lg-9 position-inherit">
+
+                    <ul id="menu-main" class="nav-menu float-right link-padding-tb-20px">
+                        <li class="active mega-links mega-links-4columns"><a href="#">Главная</a>
+
+                        </li>
+                        <li class="has-dropdown"><a class="dropdown" href="#">Меню</a>
+                            <ul class="sub-menu">
+                                <li class="has-dropdown"><a href="#">Headers</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="header-layout-1.html">Header 1</a></li>
+                                        <li><a href="header-layout-2.html">Header 2</a></li>
+                                        <li><a href="header-layout-3.html">Header 3</a></li>
+                                        <li><a href="header-layout-4.html">Header 4</a></li>
+                                        <li><a href="header-layout-5.html">Header 5</a></li>
+                                        <li><a href="header-layout-6.html">Header 6</a></li>
+                                        <li><a href="header-layout-7.html">Header 7</a></li>
+                                        <li><a href="header-layout-8.html">Header 8</a></li>
+                                        <li><a href="header-layout-9.html">Header 9</a></li>
+                                        <li><a href="header-layout-10.html">Header 10</a></li>
+                                        <li><a href="header-layout-11.html">Header 11</a></li>
+                                        <li><a href="header-layout-12.html">Header 12</a></li>
+                                        <li><a href="header-layout-13.html">Header 13</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown"><a href="#">Footers</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="footer-layout-1.html">Footer 1</a></li>
+                                        <li><a href="footer-layout-2.html">Footer 2</a></li>
+                                        <li><a href="footer-layout-3.html">Footer 3</a></li>
+                                        <li><a href="footer-layout-4.html">Footer 4</a></li>
+                                        <li><a href="footer-layout-5.html">Footer 5</a></li>
+                                        <li><a href="footer-layout-6.html">Footer 6</a></li>
+                                        <li><a href="footer-layout-7.html">Footer 7</a></li>
+                                        <li><a href="footer-layout-8.html">Footer 8</a></li>
+                                        <li><a href="footer-layout-9.html">Footer 9</a></li>
+                                        <li><a href="footer-layout-10.html">Footer 10</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown"><a href="#">Gallery</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="gallery-full-width.html">Gallery Full Width</a></li>
+                                        <li><a href="gallery-2-column.html">Gallery 2 Column</a></li>
+                                        <li><a href="gallery-3-column.html">Gallery 3 Column</a></li>
+                                        <li><a href="gallery-4-column.html">Gallery 4 Column</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown"><a href="#">Shop</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="shop-2-col-left-sidebar.html">2 Col Left sidebar</a></li>
+                                        <li><a href="shop-3-col-left-sidebar.html">3 Col Left sidebar</a></li>
+                                        <li><a href="shop-2-col-right-sidebar.html">2 Col Right sidebar</a></li>
+                                        <li><a href="shop-3-col-right-sidebar.html">3 Col Right sidebar</a></li>
+                                        <li><a href="shop-3-col.html">3 Columns</a></li>
+                                        <li><a href="shop-4-col.html">4 Columns</a></li>
+                                        <li><a href="shop-cart.html">Cart</a></li>
+                                        <li><a href="shop-single.html">Single 1</a></li>
+                                        <li><a href="shop-single-2.html">Single 2</a></li>
+                                        <li><a href="shop-single-2.html">Single 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown"><a href="#">page title</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="page-title-1.html">page title 1</a></li>
+                                        <li><a href="page-title-2.html">page title 2</a></li>
+                                        <li><a href="page-title-3.html">page title 3</a></li>
+                                        <li><a href="page-title-4.html">page title 4</a></li>
+                                        <li><a href="page-title-5.html">page title 5</a></li>
+                                        <li><a href="page-title-6.html">page title 6</a></li>
+                                        <li><a href="page-title-7.html">page title 7</a></li>
+                                        <li><a href="page-title-8.html">page title 8</a></li>
+                                        <li><a href="page-title-9.html">page title 9</a></li>
+                                        <li><a href="page-title-10.html">page title 10</a></li>
+                                    </ul>
+                                </li>
+
+                                <li class="has-dropdown"><a href="#">Dashboard</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="dashboard-home.html">Dashboard home</a></li>
+                                        <li><a href="dashboard-my-items.html">my items</a></li>
+                                        <li><a href="dashboard-my-favorites.html">my favorites</a></li>
+                                        <li><a href="dashboard-my-profile.html">my profile</a></li>
+                                        <li><a href="dashboard-blank.html">blank</a></li>
+                                        <li><a href="dashboard-404-page.html">404 page</a></li>
+                                        <li><a href="dashboard-packages.html">packages</a></li>
+                                        <li><a href="dashboard-reviews.html">reviews</a></li>
+                                    </ul>
+                                </li>
+                                <li class="has-dropdown"><a href="#">Dashboard V2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="dashboard-v2-home.html">Dashboard home</a></li>
+                                        <li><a href="dashboard-v2-my-items.html">my items</a></li>
+                                        <li><a href="dashboard-v2-my-favorites.html">my favorites</a></li>
+                                        <li><a href="dashboard-v2-my-profile.html">my profile</a></li>
+                                        <li><a href="dashboard-v2-blank.html">blank</a></li>
+                                        <li><a href="dashboard-v2-404-page.html">404 page</a></li>
+                                        <li><a href="dashboard-v2-packages.html">packages</a></li>
+                                        <li><a href="dashboard-v2-reviews.html">reviews</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+                        <li class="has-dropdown"><a href="#">Меню</a>
+                            <ul class="sub-menu">
+                                <li><a href="hotel-list.html">Hotels List View</a></li>
+                                <li><a href="hotel-grid-1.html">Hotels Grid View</a></li>
+                                <li><a href="hotel-grid-2.html">Hotels Grid View 2</a></li>
+                                <li><a href="hotel-details.html">Hotels Details</a></li>
+                                <li><a href="hotel-booking.html">Hotels Booking</a></li>
+                                <li><a href="hotel-thank-you.html">Hotels Thanks page</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+                        <li class=""><a href="#">Меню</a>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<!-- Page title --->
+<section class="background-grey-1 padding-tb-25px text-grey-4 news-header">
+    <div class="container">
+        <h6 class="font-weight-300 text-capitalize float-md-left font-2 padding-tb-10px">Новости</h6>
+        <ol class="breadcrumb z-index-2 position-relative no-background padding-tb-10px padding-lr-0px  margin-0px float-md-right">
+            <li><a href="#" class="text-grey-4">Главная</a></li>
+            <li><a href="#" class="text-grey-4">Меню</a></li>
+            <li class="active">Меню</li>
+        </ol>
+        <div class="clearfix"></div>
+    </div>
+</section>
+<!-- // Page title --->
+
+<div class="padding-tb-40px background-light-grey">
+    <div class="container">
+        <div class="row justify-content-center">
+
+            <!--  content -->
+            <div class="col-lg-9 col-md-9 sticky-content">
+
+                <!-- post -->
+                <div class="blog-entry news-detail background-white border-1 border-grey-1 margin-bottom-35px">
+                    <div class="img-in"><img src="demo-img/page-title-11.jpg" alt=""></div>
+                    <div class="padding-30px">
+                        <div class="meta">
+                           <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a href="#"
+                                                                                                              class="text-main-color">июнь
+                               29, 2018</a></span>
+                            <span class="text-extra-small margin-right-20px"><i class="fa fa-eye"></i> 5 </span>
+                            <span class="text-extra-small"><i class="fa fa-comment"></i> 23 </span>
+                        </div>
+                        <h1 class="d-block text-large text-dark font-weight-700 margin-bottom-10px"
+                            href="#">Приходите, ребята жгучие как перец халапеньо - при
+                            неосторожном обращении можно заработать обострение музыкального слуха и воспаление
+                            голосовых связок</h1>
+                        <div class="post-entry">
+                            <div class="d-block text-up-small text-grey-4 margin-bottom-15px">
+                                Думаем, ни для кого не секрет, что домашние животные благотворно влияют на здоровье
+                                своих владельцев. Особенно преуспели в этом собаки, ведь, по мнению ученых, общение с
+                                ними продлевает человеку жизнь на 2 года. А доказательств того, что другие домашние
+                                животные, например кошки, лучше влияют на здоровье людей, не существует. Так, по крайней
+                                мере, заявил кардиолог и профессор медицины Гарвардской медицинской школы Томас Ли.
+
+                                AdMe.ru расскажет о 10 научно доказанных фактах влияния собаки на здоровье своего
+                                хозяина. А чтобы продлить читателям жизнь пусть не на 2 года, а хоть на несколько минут,
+                                мы разбавили статью смешными гифками с песиками.
+
+                                Факт № 1: У владельцев собак реже бывает гипертония
+
+                                От меня не спрячешься
+
+
+                                <img src="https://files.adme.ru/files/news/part_188/1888215/24620315-153641263817569494-1536819584-728-24a2e637ac-1537274529.jpg"
+                                     data-social="https://files.adme.ru/files/news/part_188/1888215/24620315-153641263817569494-1536819584-728-24a2e637ac-1537274529.jpg"
+                                >
+
+                                Источник:
+                                https://www.adme.ru/zhizn-zhivotnye/23-kota-kotorye-diktuyut-hozyaevam-svoi-pravila-1888215/
+                                © AdMe.ru
+                                Ученые из Государственного университета Нью-Йорка в Буффало провели исследование и
+                                выяснили, что забота о собаках снижает артериальное давление, а также уровень стресса.
+                                Стоит отметить, что наблюдаемые пациенты не принимали своих лекарств. И оказалось, что
+                                давление нормализуется даже при простом поглаживании собаки.
+
+                                Факт № 2: Владельцы собак более счастливы
+
+                                Собаки делают своих хозяев счастливыми, так как они вызывают выброс гормонов счастья -
+                                эндорфинов, дофамина, серотонина, окситоцина. Все они являются природными
+                                антидепрессантами. В 2002 году британские ученые провели детальный опрос владельцев
+                                домашних животных и выяснили, что большинство из них чувствует себя счастливыми (75 %).
+                                Также опрошенные сказали, что общение с питомцами уменьшает чувство одиночества.
+
+                                Факт № 3: У владельцев собак снижается риск возникновения инсульта
+
+                                Исследование показало, что владельцы собак, перенесшие сердечный приступ, в 4 раза чаще
+                                выживают в течение следующего года по сравнению с теми, у кого нет питомцев. В другом
+                                исследовании ученые из Бруклинского колледжа выяснили, что у обладателей наших верных
+                                друзей были лучшие показатели вариабельности сердечного ритма (критерий измерения риска
+                                возникновения сердечного приступа) по сравнению с теми, у кого нет собак.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="background-white border-1 border-grey-1 margin-bottom-35px padding-30px other-news ">
+                    <h4 class="table-title margin-bottom-30px category-title"><span>Похожие новости</span></h4>
+
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="background-white">
+                                <div class="post-img">
+                                    <a href="#"><img src="demo-img/blog-2.jpg" alt=""></a>
+                                </div>
+                                <div class="margin-top-30px meta">
+
+                                    <a href="#"
+                                       class="d-block text-dark text-uppercase text-medium margin-bottom-10px font-weight-700">Готовы
+                                        к пятничным танцам? Если да то скорее бронируем места и гоу к нам на патишмати
+                                    </a>
+                                    <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a
+                                            href="#"
+                                            class="text-main-color">июнь
+                                        29, 2018</a></span>
+                                    <span class="text-extra-small margin-right-20px"><i class="fa fa-eye"></i> 5 </span>
+                                    <span class="text-extra-small"><i class="fa fa-comment"></i> 23 </span>
+                                    <p class="text-grey-2 margin-top-8px">По доброй традиции, мы приглашаем выступать в
+                                        живую молодые и энергичные группы. В эту пятницу в True Cost выступают Just
+                                        People! Приходите, ребята жгучие как перец халапеньо - при неосторожном
+                                        обращении можно заработать обострение музыкального слуха и воспаление голосовых
+                                        связок</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="background-white">
+                                <div class="post-img">
+                                    <a href="#"><img src="demo-img/blog-2.jpg" alt=""></a>
+                                </div>
+                                <div class="margin-top-30px meta">
+
+                                    <a href="#"
+                                       class="d-block text-dark text-uppercase text-medium margin-bottom-10px font-weight-700">Готовы
+                                        к пятничным танцам? Если да то скорее бронируем места и гоу к нам на патишмати
+                                    </a>
+                                    <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a
+                                            href="#"
+                                            class="text-main-color">июнь
+                                        29, 2018</a></span>
+                                    <span class="text-extra-small margin-right-20px"><i class="fa fa-eye"></i> 5 </span>
+                                    <span class="text-extra-small"><i class="fa fa-comment"></i> 23 </span>
+                                    <p class="text-grey-2 margin-top-8px">По доброй традиции, мы приглашаем выступать в
+                                        живую молодые и энергичные группы. В эту пятницу в True Cost выступают Just
+                                        People! Приходите, ребята жгучие как перец халапеньо - при неосторожном
+                                        обращении можно заработать обострение музыкального слуха и воспаление голосовых
+                                        связок</p>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <!-- // row -->
+                </div>
+
+                <div class="background-white border-1 border-grey-1 margin-bottom-35px padding-30px news-comment">
+                    <h4 class="table-title margin-bottom-30px category-title"><span>комментарий</span></h4>
+                    <ul class="commentlist padding-0px margin-0px list-unstyled text-grey-3">
+                        <li class="border-bottom-1 border-grey-1 margin-bottom-20px">
+                            <img src="demo-img/testimonials-1.jpg"
+                                 class="float-left margin-right-20px margin-bottom-20px" alt="">
+
+                                <a class="d-block text-dark text-uppercase text-medium font-weight-700" href="#">Дана ян</a>
+                               <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a href="#"
+                                                                                                                  class="text-main-color">июнь
+                                   29, 2018</a></span>
+                                <p class="margin-top-15px">Персонал вообще не работает, еле дождалась салфетки. Сижу жду
+                                    свой салат уже 46 минут, хотя сидят 4 столика всего.</p>
+
+                        </li>
+                        <li class="border-bottom-1 border-grey-1 margin-bottom-20px">
+                            <img src="demo-img/testimonials-1.jpg"
+                                 class="float-left margin-right-20px margin-bottom-20px" alt="">
+
+                                <a class="d-block text-dark text-uppercase text-medium font-weight-700" href="#">Дана ян</a>
+                               <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a href="#"
+                                                                                                                  class="text-main-color">июнь
+                                   29, 2018</a></span>
+                                <p class="margin-top-15px">Персонал вообще не работает, еле дождалась салфетки. Сижу жду
+                                    свой салат уже 46 минут, хотя сидят 4 столика всего.</p>
+
+                        </li>
+                        <li class="border-bottom-1 border-grey-1 margin-bottom-20px">
+                            <img src="demo-img/testimonials-1.jpg"
+                                 class="float-left margin-right-20px margin-bottom-20px" alt="">
+
+                                <a class="d-block text-dark text-uppercase text-medium font-weight-700" href="#">Дана ян</a>
+                               <span class="margin-right-20px text-extra-small"><i class="fa fa-calendar"></i> <a href="#"
+                                                                                                                  class="text-main-color">июнь
+                                   29, 2018</a></span>
+                                <p class="margin-top-15px">Персонал вообще не работает, еле дождалась салфетки. Сижу жду
+                                    свой салат уже 46 минут, хотя сидят 4 столика всего.</p>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+                <!--  Add Comment -->
+                <div class="background-white border-1 border-grey-1 margin-bottom-35px padding-30px add-comment">
+                    <h4 class="table-title margin-bottom-30px category-title"><span>Напишите Комментарий</span></h4>
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <label for="inputName">Полное имя</label>
+                                <input type="text" class="form-control" id="inputName4" placeholder="имя">
+                            </div>
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Комментарий</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                                      placeholder="напишите..."></textarea>
+                        </div>
+                        <a href="#"
+                           class="btn-sm btn-lg btn-block background-main-color text-white text-center font-weight-bold text-uppercase rounded-0 padding-10px">Отправить</a>
+                    </form>
+                </div>
+                <!-- // Add Comment -->
+
+
+            </div>
+            <!-- //  content -->
+
+        </div>
+    </div>
+</div>
+
+<div id="instgram-feed">
+    <ul class="instagram-feed">
+        <li><a href="#"><img src="demo-img/instagram-1.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-2.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-3.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-4.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-5.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-6.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-7.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-8.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-9.jpg" alt=""></a></li>
+        <li><a href="#"><img src="demo-img/instagram-10.jpg" alt=""></a></li>
+    </ul>
+    <div class="clearfix"></div>
+</div>
+<!-- // Instgram Feed -->
+
+
+<!-- Footer -->
+<footer class="text-center text-lg-left ">
+    <div class="container">
+        <div class="row padding-tb-100px">
+            <div class="col-lg-6 sm-mb-35px">
+                <div class="about">
+                    <div class="logo margin-bottom-20px"><a href="#"><img src="images/logo.png" alt=""></a>
+                    </div>
+                    <p class="text-grey-2">
+                        Qazaq Portal, крупнейший в мире сайт о путешествиях*, позволяет путешественникам узнать обо всех
+                        возможностях, которыми они могут воспользоваться в поездке. На сайте TripAdvisor Вы найдете
+                        более 661 миллионов отзывов и мнений почти о 7,7 миллиона объектов со всего света: отелях,
+                        авиакомпаниях, достопримечательностях и ресторанах. Положившись на опыт других путешественников,
+                        Вы сможете принять верное решение о том, где остановиться, какую авиакомпанию выбрать, чем
+                        заняться и какой ресторан посетить
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-3 sm-mb-35px">
+                <ul class="footer-menu row margin-0px padding-0px list-unstyled">
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Главная</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a>
+                    </li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a></li>
+                    <li class="col-6  padding-tb-5px"><a href="#" class="text-main-color">Меню</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-3">
+                <ul class="images-feed row no-gutters margin-0px padding-0px list-unstyled">
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-1.jpg" alt=""></a></li>
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-2.jpg" alt=""></a></li>
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-3.jpg" alt=""></a></li>
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-4.jpg" alt=""></a></li>
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-5.jpg" alt=""></a></li>
+                    <li class="col-4 padding-tb-5px"><a href="#" class="padding-lr-5px d-block"><img
+                            src="demo-img/instagram-6.jpg" alt=""></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row padding-tb-30px border-top-1 border-grey-1">
+            <div class="col-lg-8">
+                <p class="text-lg-left"><span class="text-third-color">Qazaq Portal</span> | © 2018 Все права защищены
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <ul class="social_link list-inline text-sm-center text-lg-right">
+                    <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-facebook"
+                                                                                 aria-hidden="true"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a class="facebook" href="#"><i class="fa fa-vk"
+                                                                                 aria-hidden="true"></i></a>
+                    </li>
+                    <li class="list-inline-item"><a class="google" href="#"><i class="fa fa-google-plus"
+                                                                               aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="twitter" href="#"><i class="fa fa-twitter"
+                                                                                aria-hidden="true"></i></a></li>
+                    <li class="list-inline-item"><a class="rss" href="#"><i class="fa fa-instagram"
+                                                                            aria-hidden="true"></i></a></li>
+                </ul>
+                <!-- // Social -->
+            </div>
+        </div>
+
+    </div>
+
+</footer>
+<!-- // Footer -->
+<script type="text/javascript" src="js/sticky-sidebar.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+</body>
+
+</html>
